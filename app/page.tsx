@@ -3,7 +3,6 @@ import React from "react";
 import Link from "next/link";
 import { Card } from "./components/ui/card";
 import { RevealCard } from "./components/ui/revealCard";
-import { TracingBeam } from "./components/ui/tracing-beam";
 
 export default function Home() {
 
@@ -109,7 +108,7 @@ export default function Home() {
 
      
 
-      <section className="my-28  w-full rounded-md flex md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden" id="blogs">
+      <section className="my-28  w-full rounded-md flex md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden" id="skills">
         
 
         <div className="container px-4 md:px-6">
@@ -143,7 +142,7 @@ export default function Home() {
       </section>
 
 
-      <section className="my-28  w-full rounded-md flex md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden" id="blogs">
+      <section className="my-28  w-full rounded-md flex md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden" id="projects">
         
 
         <div className="container px-4 md:px-6">
@@ -151,7 +150,7 @@ export default function Home() {
           Projects
           </div>
 
-          <div className="justify-center grid sm:grid-cols-2 lg:grid-cols-3">
+          <div className="justify-center grid sm:grid-cols-1 lg:grid-cols-3">
            {
               projects.map((project, index) => {
                 const { title, demoLink, description, image } = project;
@@ -164,9 +163,10 @@ export default function Home() {
    
 
 
-
         </div>
       </section>
+
+
       <section className="my-28  w-full rounded-md flex md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden" id="blogs">
         
 
@@ -175,7 +175,7 @@ export default function Home() {
           Blogs
           </div>
 
-          <div className="justify-center grid sm:grid-cols-2 lg:grid-cols-3">
+          <div className="justify-center grid sm:grid-cols-1 lg:grid-cols-3">
            {
              blogs.map((blog, index) => {
               const { title, visitBlog, image, description } = blog;
@@ -194,6 +194,33 @@ export default function Home() {
 
         </div>
       </section>
+
+
+
+      <footer className="px-5 h-16 flex items-center justify-between text-gray-400  bg-black">
+        <div className="text-sm" >
+        © 2024 Vishv Salvi
+        </div>
+        <div>
+        <Link target="_blank" href="https://www.linkedin.com/in/vishvsalvi/" >
+        <i className="devicon-linkedin-plain text-lg mx-2 hover:cursor-pointer ">
+        </i>
+        </Link>
+        <Link target="_blank" href="https://www.github.com/vishvsalvi/" >
+        <i className="devicon-github-original text-lg mx-2 hover:cursor-pointer "></i>
+        </Link>
+          
+        <Link target="_blank" href="https://x.com/SalviVishv" >
+        <i className="devicon-twitter-original text-lg mx-2 hover:cursor-pointer "></i>
+        </Link>
+          
+        <Link target="_blank" href="https://vishvsalvi.hashnode.dev" >
+        <span className="mx-3 font-semibold" >Blogs</span>
+        </Link>
+          
+        </div>
+      </footer>
+
     </main>
 
 
