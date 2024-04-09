@@ -46,8 +46,19 @@ export default function Home() {
       title: "Shadcn: The Ultimate Component Companion",
       visitBlog: "https://vishvsalvi.hashnode.dev/shadcn",
       image: "https://cdn.hashnode.com/res/hashnode/image/upload/v1706373831813/9f475faf-0587-4205-a02f-e9bfcb919966.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp",
-      description: "Shadcn is a component library that provides ..."
+      description: "Shadcn is a component library that provides you free and "
 
+    },{
+      title: "How to use Git to manage your project and upload it on GitHub?",
+      visitBlog: "https://vishvsalvi.hashnode.dev/upload-your-project-on-github-using-git",
+      image: "https://cdn.hashnode.com/res/hashnode/image/unsplash/wX2L8L-fGeA/upload/v1669279505282/Kh5ov1WSA.jpeg?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp",
+      description: "Git is an open source software that helps to keep track of "
+    },
+    {
+      title: "Tailwind CSS: The utility-first approach to styling",
+      visitBlog: "https://vishvsalvi.hashnode.dev/tailwind-css-the-utility-first-approach-to-styling",
+      image: "https://cdn.hashnode.com/res/hashnode/image/upload/v1671163632624/SQqq6BW98.jpg?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp",
+      description: "Tailwind CSS is a utility-first CSS framework that helps "
     }
   ]
 
@@ -145,12 +156,12 @@ export default function Home() {
       <section className="my-28  w-full rounded-md flex md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden" id="projects">
         
 
-        <div className="container px-4 md:px-6">
+        <div className="container px-2 md:px-6">
         <div className="w-full text-center text-3xl font-bold tracking-tighter sm:text-4xl md:text-6xl bg-clip-text mb-2 text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50 pt-1" >
           Projects
           </div>
 
-          <div className="justify-center grid sm:grid-cols-1 lg:grid-cols-3">
+          <div className="flex flex-wrap gap-4 justify-center items-center mt-8">
            {
               projects.map((project, index) => {
                 const { title, demoLink, description, image } = project;
@@ -175,7 +186,7 @@ export default function Home() {
           Blogs
           </div>
 
-          <div className="justify-center grid sm:grid-cols-1 lg:grid-cols-3">
+          <div className="flex flex-wrap gap-4 justify-center items-center mt-5">
            {
              blogs.map((blog, index) => {
               const { title, visitBlog, image, description } = blog;
