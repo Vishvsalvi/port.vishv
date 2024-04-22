@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Card } from "./components/ui/card";
 import { RevealCard } from "./components/ui/revealCard";
 
+
 export default function Home() {
 
   const projects = [
@@ -13,6 +14,12 @@ export default function Home() {
       description: "Website made for a 3d printing business. This was my first freelance project.",
       image: "https://vishvsalvi-portfolio.pages.dev/Images/Project_1.png",
     }, 
+    {
+      title: "HR Classes",
+      demoLink: "https://hrclasses.co.in/",
+      description: "Website developed for coaching classes offering various courses for school students. It was a freelance gig.",
+      image: "/Images/HR_img.png"
+    },
     {
       title: "Flipkart Clone",
       demoLink: "https://flipkart-clone.pages.dev/",
@@ -37,6 +44,13 @@ export default function Home() {
 
     },
     {
+      title:"Recoil: A New Approach to State Management in React",
+      visitBlog: "https://vishvsalvi.hashnode.dev/recoil-a-new-approach-to-state-management-in-react",
+      image: "https://cdn.hashnode.com/res/hashnode/image/upload/v1713598112335/22f5d8ec-78de-47f1-88f9-2cfaff4fe2af.jpeg?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp",
+      description: "Recoil, a state management library for React that ..."
+
+    },
+    {
       title: "Difference Between Access Token And Refresh Token",
       visitBlog: "https://vishvsalvi.hashnode.dev/difference-between-access-token-and-refresh-token",
       image: "https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/-XiKxvvFGgU/upload/135ad373efbd86ae791c9cd79d706566.jpeg?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp",
@@ -52,14 +66,14 @@ export default function Home() {
       title: "How to use Git to manage your project and upload it on GitHub?",
       visitBlog: "https://vishvsalvi.hashnode.dev/upload-your-project-on-github-using-git",
       image: "https://cdn.hashnode.com/res/hashnode/image/unsplash/wX2L8L-fGeA/upload/v1669279505282/Kh5ov1WSA.jpeg?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp",
-      description: "Git is an open source software that helps to keep track of "
+      description: "Git is an open source software that helps to keep track ..."
     },
     {
       title: "Tailwind CSS: The utility-first approach to styling",
       visitBlog: "https://vishvsalvi.hashnode.dev/tailwind-css-the-utility-first-approach-to-styling",
       image: "https://cdn.hashnode.com/res/hashnode/image/upload/v1671163632624/SQqq6BW98.jpg?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp",
-      description: "Tailwind CSS is a utility-first CSS framework that helps "
-    }
+      description: "Tailwind CSS is a utility-first CSS framework that helps ..."
+    },
   ]
 
   const skills = [
@@ -153,7 +167,7 @@ export default function Home() {
       </section>
 
 
-      <section className="my-28  w-full rounded-md flex md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden" id="projects">
+      <section className="my-28 w-full rounded-md flex md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden" id="projects">
         
 
         <div className="container px-2 md:px-6">
