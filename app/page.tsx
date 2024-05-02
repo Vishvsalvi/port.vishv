@@ -1,8 +1,11 @@
-import { Spotlight } from "./components/ui/Spotlight";
+"use client"
+// import { Spotlight } from "./components/ui/Spotlight";
 import React from "react";
 import Link from "next/link";
 import { Card } from "./components/ui/card";
 import { RevealCard } from "./components/ui/revealCard";
+import { motion } from "framer-motion";
+import { HeroHighlight, Highlight } from "./components/ui/hero-highlight";
 
 
 export default function Home() {
@@ -57,10 +60,10 @@ export default function Home() {
       description: "Access tokens and refresh tokens are used to auth ..."
     },
     {
-      title: "Shadcn: The Ultimate Component Companion",
-      visitBlog: "https://vishvsalvi.hashnode.dev/shadcn",
-      image: "https://cdn.hashnode.com/res/hashnode/image/upload/v1706373831813/9f475faf-0587-4205-a02f-e9bfcb919966.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp",
-      description: "Shadcn is a component library that provides you free and "
+      title: "Accelerate Your Dream Projects with These Lightning-Fast UI Libraries!",
+      visitBlog: "https://vishvsalvi.hashnode.dev/accelerate-your-dream-projects-with-these-lightning-fast-ui-libraries",
+      image: "https://cdn.hashnode.com/res/hashnode/image/upload/v1712903122034/8961fe4a-c73a-4229-94a0-43e29a813cd5.webp?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp",
+      description: "There are numerous UI libraries that offer visually ..."
 
     },{
       title: "How to use Git to manage your project and upload it on GitHub?",
@@ -112,28 +115,36 @@ export default function Home() {
 
   return (
     <main>
-      <section className=" h-[38rem] item-center text-center w-full rounded-md flex md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
+      {/* <section className="bg-dot-thick-indigo-500 dark:bg-dot-thick-indigo-500  h-[45rem] item-center text-center w-full rounded-md flex md:items-center md:justify-center bg-black/[0.96] antialiased relative overflow-hidden"> */}
 
-        <div className="w-full" >
-          <Spotlight
-            className="-top-40 left-0 md:left-60 md:-top-20"
-            fill="white"
-          />
-          <div className=" p-4 max-w-7xl text-center mx-auto relative z-10  w-full pt-20 md:pt-0">
-            <h1 className="text-4xl md:text-7xl justify-center font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
-              Hi, I'm Vishv Salvi.
-            </h1>
-            <p className="mt-4 font-normal text-base text-neutral-300 max-w-lg text-center mx-auto">
-              Full Stack Web Developer
-
-            </p>
-          </div>
-        </div>
-      </section>
+      <HeroHighlight>
+      <motion.h1
+        initial={{
+          opacity: 0,
+          y: 20,
+        }}
+        animate={{
+          opacity: 1,
+          y: [20, -5, 0],
+        }}
+        transition={{
+          duration: 0.5,
+          ease: [0.4, 0.0, 0.2, 1],
+        }}
+        className="text-2xl px-4 md:text-4xl lg:text-5xl font-bold text-neutral-700 dark:text-white max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto "
+      >
+        Your Friendly Neighbourhood <br /> Full Stack Developer
+        {" "}
+        <Highlight className="text-black dark:text-white">
+          Vishv Salvi
+        </Highlight>
+      </motion.h1>
+    </HeroHighlight>
+      {/* </section> */}
 
      
 
-      <section className="my-28  w-full rounded-md flex md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden" id="skills">
+      <section className="my-28   w-full rounded-md flex md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden" id="skills">
         
 
         <div className="container px-4 md:px-6">
