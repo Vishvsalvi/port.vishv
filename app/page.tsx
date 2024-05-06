@@ -134,8 +134,9 @@ export default function Home() {
         className="text-2xl px-4 md:text-4xl lg:text-5xl font-bold text-neutral-700 dark:text-white max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto "
       >
         Your Friendly Neighbourhood Full Stack Developer
+      
         {" "}
-        <Highlight className="text-black dark:text-white">
+        <Highlight className="text-black dark:text-white whitespace-nowrap">
           Vishv Salvi
         </Highlight>
       </motion.h1>
