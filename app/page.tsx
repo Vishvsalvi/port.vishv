@@ -133,7 +133,7 @@ export default function Home() {
         }}
         className="text-2xl px-4 md:text-4xl lg:text-5xl font-bold text-neutral-700 dark:text-white max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto "
       >
-        Your Friendly Neighbourhood <br /> Full Stack Developer
+        Your Friendly Neighbourhood Full Stack Developer
         {" "}
         <Highlight className="text-black dark:text-white">
           Vishv Salvi
